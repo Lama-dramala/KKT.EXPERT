@@ -47,7 +47,9 @@
     display: block;
 }
 .section-4_reviews_item_review{
+    display: block;
     margin-top: 0;
+    margin-bottom: 11px;
     font-size: 14px;
     line-height: 20px;
     overflow: hidden;
@@ -101,10 +103,13 @@
 #section-4_swiper-next{
     right: -155px;
 }
-#section-4_swiper-next img{
+#section-4_swiper-next img, #section-4_swiper-2-next img{
     rotate: 180deg;
 }
 #section-4_swiper-prev.swiper-button-prev::after, #section-4_swiper-next.swiper-button-next::after{
+    display: none;
+}
+#section-4_swiper-2-prev.swiper-button-prev::after, #section-4_swiper-2-next.swiper-button-next::after{
     display: none;
 }
 .swiper-button-disabled{
@@ -115,6 +120,9 @@
 }
 .swiper-pagination-bullet-active{
     background-color: #FFA800;
+}
+.swiper-slide{
+    padding-bottom: 500px;
 }
 
 @media (max-width: 1550px){
@@ -171,4 +179,72 @@
         width: 70%;
         height: 70%;
     }
+}
+@media (max-width: 1000px){    
+    .section-4_slider-2{
+        height: 400px;
+        width: 450px;
+        overflow: visible;
+    }
+    .section-4_slider-2 .swiper-slide{
+        display: flex;
+        justify-content: center;
+    }
+    .section-4_reviews_item{
+        padding: 25px;
+    }
+    .section-4_reviews_item_review{
+        margin-top: 20px;
+    }
+    #section-4_swiper-2-prev, #section-4_swiper-2-next{
+        top: calc(50% - 25px);
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        background: linear-gradient(180deg, #FFB82D 0%, #FFA800 100%);
+    }
+    #section-4_swiper-2-prev{    
+        left: -100px;
+    }
+    #section-4_swiper-2-next{
+        right: -100px;
+    }
+    #section-4_swiper-2-pagination{
+        bottom: -54px;    
+    }
+}
+@media (max-width: 800px){    
+    .section-4_slider-2{
+        width: 300px;
+    }
+    .section-4_reviews_item_review{
+        height: 200px;
+    }
+    #section-4_swiper-2-prev{    
+        left: -60px;
+    }
+    #section-4_swiper-2-next{
+        right: -60px;
+    }
+    #section-4_swiper-2-prev, #section-4_swiper-2-next{
+        width: 40px;
+        height: 40px;
+    }
+    #section-4_swiper-2-prev img, #section-4_swiper-2-next img{
+        width: 70%;
+        height: 70%;
+    }
+}
+@media (max-width: 480px){    
+    .section-4_slider-2{
+        width: 200px;
+        height: 320px;
+    }
+    .section-4_reviews_item_customer{
+        margin-top: 0;
+    }
+    .section-4_reviews_item{
+        padding: 10px;
+    }
+
 }

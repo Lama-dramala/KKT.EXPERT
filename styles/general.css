@@ -38,6 +38,9 @@ button{
 .xl-visible{
     display: none !important;
 }
+.lg-visible{
+    display: none !important;
+}
 .md-visible{
     display: none !important;
 }
@@ -51,6 +54,15 @@ button{
     .xl-hidden{
         display: none !important;
     }
+}
+@media (max-width: 1000px){   
+    .lg-visible{
+        display: block !important;
+    } 
+    .lg-hidden{
+        display: none !important;
+    }
+
 }
 @media (max-width: 800px){
     h2{

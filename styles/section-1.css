@@ -92,3 +92,16 @@
         padding: 14px 40px;
     }
 }
+@media (max-width: 580px){
+    .section-1_items-wrap{
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-1_item{
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+    .section-1_item:last-child{
+        margin-bottom: 0;
+    }
+}

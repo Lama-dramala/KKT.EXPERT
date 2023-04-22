@@ -34,3 +34,8 @@
         font-size: 12px;
     }
 }
+@media (max-width: 800px){    
+    .section-2{
+        padding: 20px 0;
+    }
+}

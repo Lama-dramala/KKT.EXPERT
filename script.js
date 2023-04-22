@@ -9,6 +9,17 @@ const swiperSec4 = new Swiper('.section-4_slider', {
       el: "#section-4_swiper-pagination",
     },
   });
+  const swiper2Sec4 = new Swiper('.section-4_slider-2', {
+    slidesPerView: "1",
+    spaceBetween: 2000,  
+    navigation: {
+      nextEl: '#section-4_swiper-2-next',
+      prevEl: '#section-4_swiper-2-prev',
+    },
+    pagination: {
+      el: "#section-4_swiper-2-pagination",
+    },
+  });
   const swiperSec5 = new Swiper('#section-5_slider', {
     slidesPerView: "1",
     spaceBetween: 2000,  
@@ -45,7 +56,16 @@ $(function() {
   $(".section-8_map-container").on("click", function() {
     $(".section-8_map-container").toggleClass("section-8_map-container-2");
     $(".section-8_map-container").removeClass("section-8_map-container");
-    console.log("hi");
+  });
+  
+});
+$(function() {
+
+  $(".section-4_reviews_item_expand-btn").on("click", function(e) {
+
+    e.preventDefault();
+    var $this = $(this);
+    $this.prev().css("position", "unset");
   });
   
 });

@@ -40,6 +40,9 @@
     }
 }
 @media (max-width: 800px){
+    .section-3_h2{
+        margin-bottom: 30px;
+    }
     .section-3_clients_item{
         width: 150px;
         height: 100px;
@@ -47,5 +50,26 @@
     .section-3_clients_item img{
         width: 50%;
         height: 30%;
+    }
+}
+@media (max-width: 580px){
+    .section-3{
+        padding: 40px 0;
+    }
+    .section-3_h2{
+        margin-bottom: 0;
+    }
+    .section-3_clients_row{
+        flex-direction: column;
+        border: 0;
+    }
+    .section-3_clients_item{
+        width: 250px;
+        height: 200px;
+        border: 0;
+    }
+    .section-3_clients_item img{
+        width: 80%;
+        height: unset;
     }
 }

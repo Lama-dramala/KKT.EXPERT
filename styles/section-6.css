@@ -62,3 +62,11 @@
         font-size: 12px;
     }
 }
+@media (max-width: 580px){
+    .section-6{
+        padding: 15px 0;
+    }
+    .section-6_h2{
+        margin-bottom: 0px;
+    }
+}
