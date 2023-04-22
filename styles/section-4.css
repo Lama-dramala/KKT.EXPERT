@@ -227,13 +227,16 @@
         right: -60px;
     }
     #section-4_swiper-2-prev, #section-4_swiper-2-next{
-        width: 40px;
-        height: 40px;
+        width: 35px;
+        height: 35px;
     }
     #section-4_swiper-2-prev img, #section-4_swiper-2-next img{
         width: 70%;
         height: 70%;
     }
+}
+@media (max-width: 560px){
+
 }
 @media (max-width: 480px){    
     .section-4_slider-2{
