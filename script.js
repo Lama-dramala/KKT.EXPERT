@@ -69,3 +69,18 @@ $(function() {
   });
   
 });
+$(function() {
+
+  $(".header_top_burger-menu").on("click", function() {
+
+    if ($(".header_top_burger-menu").hasClass("header-mobile-active")) {
+      $(".header_top_mobile").toggleClass("hidden");
+      $(".header_top_burger-menu").removeClass("header-mobile-active");
+      console.log("hi")
+    } else{
+      $(".header_top_burger-menu").toggleClass("header-mobile-active");
+      $(".header_top_mobile").removeClass("hidden");
+      console.log("bie")
+    }
+  });  
+});
