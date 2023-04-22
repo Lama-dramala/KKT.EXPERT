@@ -1,0 +1,36 @@
+.section-2{
+    padding: 110px 0 135px;
+    background-color: #F5F5F5;
+    position: relative;
+}
+.section-2::after{
+    content: "";
+    height: 100%;
+    width: 492px;
+    background-image: url(../img/section-2_1.png);
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.section-2_text{
+    margin-right: 670px;
+    font-size: 18px;
+}
+@media (max-width: 1200px){
+    .section-2{
+        padding: 50px 0 50px;
+    }
+    .section-2::after{
+        display: none;
+    }
+    .section-2_text{
+        margin-right: 0;
+        font-size: 14px;
+    }
+}
+@media (max-width: 800px){
+    .section-2_text{
+        font-size: 12px;
+    }
+}

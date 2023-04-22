@@ -1,0 +1,65 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Raleway';
+    margin: 0;
+}
+.container{
+    box-sizing: border-box;
+    max-width: 1520px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+    color: unset;
+}
+ul{
+    padding: 0;
+    margin: unset;
+}
+h2{
+    margin: unset;
+    text-decoration: underline;
+    font-size: 40px;
+    font-weight: normal;
+}
+button{
+    background-color: unset;
+    border: unset;
+    cursor: pointer;    
+    padding: unset;
+    font-family: unset;
+}
+.hidden{
+    display: none !important;
+}
+.xl-visible{
+    display: none !important;
+}
+.md-visible{
+    display: none !important;
+}
+@media (max-width: 1200px){
+    h2{
+        font-size: 30px;
+    }   
+    .xl-visible{
+        display: block !important;
+    } 
+    .xl-hidden{
+        display: none !important;
+    }
+}
+@media (max-width: 800px){
+    h2{
+        font-size: 20px;
+    }
+    .md-hidden{
+        display: none !important;
+    }
+    .md-visible{
+        display: block!important;
+    }
+}
