@@ -32,9 +32,6 @@ button{
     padding: unset;
     font-family: unset;
 }
-.hidden{
-    display: none !important;
-}
 .xl-visible{
     display: none !important;
 }
@@ -42,6 +39,9 @@ button{
     display: none !important;
 }
 .md-visible{
+    display: none !important;
+}
+.mobile-visible{
     display: none !important;
 }
 @media (max-width: 1200px){
@@ -74,4 +74,16 @@ button{
     .md-visible{
         display: block!important;
     }
+}
+@media (max-width: 580px){
+    .mobile-hidden{
+        display: none !important;
+    }
+    .mobile-visible{
+        display: flex !important;
+    }
+}
+
+.hidden{
+    display: none !important;
 }

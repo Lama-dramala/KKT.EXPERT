@@ -127,11 +127,19 @@
     }
 }
 @media (max-width: 580px){
-    .header_top{
-        flex-direction: column;
+    .header_top_burger-menu{
+        display: flex;
+        align-items: center;
     }
-    .header_top_logo{
-        margin-bottom: 20px;
+    .header_top_burger-menu img{
+        height: 25px;
+        width: 25px;
+    }
+    .header_top_mobile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
     }
     .header_top_right_soc-media{
         width: 30px;
@@ -142,7 +150,7 @@
         height: 90%;
     }
     .header_top_right_soc-media:nth-child(2) img{
-        width: 80%;
+        width: 70%;
         height: 80%;
     }
     .header_top_right_tel{
