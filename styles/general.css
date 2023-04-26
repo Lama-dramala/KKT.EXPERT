@@ -15,6 +15,9 @@ a{
     text-decoration: none;
     color: unset;
 }
+a:hover{
+    text-decoration: underline;
+}
 ul{
     padding: 0;
     margin: unset;
