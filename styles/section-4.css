@@ -141,6 +141,10 @@
     .section-4_slider{
         padding: 0 75px;
     }
+    .section-4_slider .swiper-slide{
+        display: flex;
+        justify-content: center;
+    }
     .section-4_reviews-wrap{
         gap: 10px;
     }
